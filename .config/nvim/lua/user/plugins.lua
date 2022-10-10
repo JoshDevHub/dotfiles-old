@@ -68,10 +68,12 @@ return packer.startup(function(use)
     branch = "stable"
   }
 
+
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-  use "Mofiqul/dracula.nvim"
+
   use "catppuccin/nvim"
+  use "Mofiqul/dracula.nvim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -89,7 +91,11 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
-  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
+  -- for formatters and linters
+  use {
+    "jose-elias-alvarez/null-ls.nvim",
+    commit = 'cdef04df'
+  }
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
@@ -101,6 +107,7 @@ return packer.startup(function(use)
   }
   use "JoosepAlviste/nvim-ts-context-commentstring"
   use "nvim-treesitter/playground"
+  use "nvim-treesitter/nvim-treesitter-textobjects"
 
   -- Git
   use "lewis6991/gitsigns.nvim"

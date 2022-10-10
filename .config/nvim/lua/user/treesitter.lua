@@ -23,4 +23,14 @@ configs.setup {
     enable = true,
     enable_autocmd = false,
   },
+  textobjects = {
+    select = {
+      enable = true,
+      lookahead = true,
+      keymaps = {
+        ["ab"] = "@block.outer",
+        ["ib"] = "@block.inner"
+      }
+    }
+  }
 }

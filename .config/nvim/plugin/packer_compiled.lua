@@ -219,6 +219,11 @@ _G.packer_plugins = {
     path = "/home/josh/.local/share/nvim/site/pack/packer/start/nvim-treesitter-endwise",
     url = "https://github.com/RRethy/nvim-treesitter-endwise"
   },
+  ["nvim-treesitter-textobjects"] = {
+    loaded = true,
+    path = "/home/josh/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
+  },
   ["nvim-ts-context-commentstring"] = {
     loaded = true,
     path = "/home/josh/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",

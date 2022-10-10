@@ -37,4 +37,4 @@ vim.cmd [[
   augroup end
 ]]
 
-vim.cmd "colorscheme dracula"
+vim.cmd [[colorscheme dracula]]
