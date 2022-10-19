@@ -117,16 +117,15 @@ alias nv="nvim"
 
 # const nav commands
 alias odin="cd ~/Dev/Odin-Project"
-alias scratch="cd ~/Dev/test-space"
-alias advent="cd ~/Dev/Advent-of-Code"
-alias leet="cd ~/Dev/LeetCode"
-alias codewars="cd ~/Dev/CodeWars"
-alias exercism-rb="cd ~/snap/exercism/5/exercism/ruby"
 
-# proj nav commands
-alias rails-book="cd ~/Dev/Odin-Project/rails-book"
-alias flight-booker="cd ~/Dev/Odin-Project/flight-booker"
-alias chess="cd ~/Dev/Odin-Project/Chess"
+# sessions
+alias scratch="~/.local/bin/tmux-sessionizer ~/Dev/test-space"
+alias rails-book="~/.local/bin/tmux-sessionizer ~/Dev/Odin-Project/rails-book"
+alias flight-booker="~/.local/bin/tmux-sessionizer ~/Dev/Odin-Project/flight-booker"
+alias chess="~/.local/bin/tmux-sessionizer ~/Dev/Odin-Project/Chess"
+alias leet="~/.local/bin/tmux-sessionizer ~/Dev/LeetCode"
+alias advent="~/.local/bin/tmux-sessionizer ~/Dev/Advent-of-Code"
+alias exercism-rb="~/.local/bin/tmux-sessionizer ~/snap/exercism/5/exercism/ruby"
 
 # rails CLI
 alias br="bin/rails"
