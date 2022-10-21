@@ -17,6 +17,9 @@ vim.cmd [[
                       \ | highlight javascriptTSConstructor guifg=#8be9fd
                       \ | highlight javascriptTSKeywordFunction guifg=#ff79c6
                       \ | highlight javascriptTSConstBuiltin guifg=#bd93f9
+                      \ | highlight typescriptTSKeywordFunction guifg=#ff79c6
+                      \ | highlight typescriptTSProperty guifg=#bd93f9
+                      \ | highlight Keyword guifg=#ff79c6
                       \ | highlight htmlTSTag guifg=#ff79c6
                       \ | highlight htmlTSTitle guifg=#f8f8f2
                       \ | highlight htmlEndTag guifg=#ff79c6

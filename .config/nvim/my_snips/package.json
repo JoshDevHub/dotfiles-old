@@ -1,0 +1,11 @@
+{
+  "name": "erb",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "eruby",
+        "path": "./eruby.json"
+      }
+    ]
+  }
+}
