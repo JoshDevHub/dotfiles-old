@@ -126,6 +126,7 @@ alias chess="~/.local/bin/tmux-sessionizer ~/Dev/Odin-Project/Chess"
 alias leet="~/.local/bin/tmux-sessionizer ~/Dev/LeetCode"
 alias advent="~/.local/bin/tmux-sessionizer ~/Dev/Advent-of-Code"
 alias exercism-rb="~/.local/bin/tmux-sessionizer ~/snap/exercism/5/exercism/ruby"
+alias kata-machine="~/.local/bin/tmux-sessionizer ~/Dev/kata-machine"
 
 # rails CLI
 alias br="bin/rails"
