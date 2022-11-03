@@ -62,7 +62,6 @@ return packer.startup(function(use)
   use "tpope/vim-sleuth"
   use "tpope/vim-rails"
   use "nickspoons/vim-cs"
-  use "Pocco81/auto-save.nvim"
   use {
     "echasnovski/mini.nvim",
     branch = "stable"
@@ -104,10 +103,12 @@ return packer.startup(function(use)
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
+    commit = '4cccb6f'
   }
   use "JoosepAlviste/nvim-ts-context-commentstring"
   use "nvim-treesitter/playground"
   use "nvim-treesitter/nvim-treesitter-textobjects"
+  use "nvim-treesitter/nvim-treesitter-context"
 
   -- Git
   use "lewis6991/gitsigns.nvim"

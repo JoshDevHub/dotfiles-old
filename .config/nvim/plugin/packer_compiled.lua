@@ -94,11 +94,6 @@ _G.packer_plugins = {
     path = "/home/josh/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
   },
-  ["auto-save.nvim"] = {
-    loaded = true,
-    path = "/home/josh/.local/share/nvim/site/pack/packer/start/auto-save.nvim",
-    url = "https://github.com/Pocco81/auto-save.nvim"
-  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/josh/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -213,6 +208,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/josh/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-treesitter-context"] = {
+    loaded = true,
+    path = "/home/josh/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
   },
   ["nvim-treesitter-endwise"] = {
     loaded = true,

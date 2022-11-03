@@ -113,7 +113,7 @@ alias c="clear"
 alias x="exit"
 
 # NeoVim
-alias nv="nvim"
+alias nv="~/nvim.appimage"
 
 # const nav commands
 alias odin="cd ~/Dev/Odin-Project"
