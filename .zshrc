@@ -70,7 +70,7 @@ ZSH_THEME="eastwood"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode)
+plugins=(git vi-mode zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,8 +103,9 @@ source $ZSH/oh-my-zsh.sh
 # == ALIASES =====================================
 
 # edit term tools
-alias zedit="nvim ~/.zshrc"
-alias tedit="nvim ~/.tmux.conf"
+alias zedit="nv ~/.zshrc"
+alias tedit="nv ~/.tmux.conf"
+alias nedit="nv ~/.config/nvim"
 alias zsrc="source $HOME/.zshrc"
 alias tsrc="tmux source $HOME/.tmux.conf"
 
@@ -117,22 +118,17 @@ alias nv="~/nvim.appimage"
 
 # const nav commands
 alias odin="cd ~/Dev/Odin-Project"
-
-# sessions
-alias scratch="~/.local/bin/tmux-sessionizer ~/Dev/test-space"
-alias rails-book="~/.local/bin/tmux-sessionizer ~/Dev/Odin-Project/rails-book"
-alias flight-booker="~/.local/bin/tmux-sessionizer ~/Dev/Odin-Project/flight-booker"
-alias chess="~/.local/bin/tmux-sessionizer ~/Dev/Odin-Project/Chess"
-alias leet="~/.local/bin/tmux-sessionizer ~/Dev/LeetCode"
-alias advent="~/.local/bin/tmux-sessionizer ~/Dev/Advent-of-Code"
-alias exercism-rb="~/.local/bin/tmux-sessionizer ~/snap/exercism/5/exercism/ruby"
-alias kata-machine="~/.local/bin/tmux-sessionizer ~/Dev/kata-machine"
+alias rails-book="cd ~/Dev/Odin-Project/rails-book"
+alias flight-booker="cd ~/Dev/Odin-Project/flight-booker"
+alias chess="cd ~/Dev/Odin-Project/Chess"
+alias leet="cd ~/Dev/LeetCode"
+alias advent="cd ~/Dev/Advent-of-Code"
+alias exercism="cd ~/snap/exercism/5/exercism/ruby"
+alias kata-machine="~/Dev/kata-machine"
 
 # rails CLI
 alias br="bin/rails"
 alias bex="bundle exec"
-alias rsys="rake spec:system"
-alias rmod="rake spec:models"
 alias cov="xdg-open coverage/index.html"
 
 # Dotfile mgmt
