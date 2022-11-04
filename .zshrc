@@ -74,6 +74,8 @@ plugins=(git vi-mode zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
+bindkey -M viins 'jk' vi-cmd-mode
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
