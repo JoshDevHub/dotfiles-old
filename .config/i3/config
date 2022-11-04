@@ -203,3 +203,18 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 # Set background image
 exec_always --no-startup-id feh --bg-scale ~/Pictures/tranquil_lake.jpg
+
+# Set Workspaces to Monitors
+workspace 1 output DVI-I-1
+workspace 2 output DVI-I-1
+workspace 9 output HDMI-1
+
+# init programs
+assign [class="google-chrome"] $ws1
+exec --no-startup-id google-chrome
+
+assign [class="discord"] $ws2
+exec --no-startup-id discord
+
+assign [class="alacritty"] $ws9
+exec --no-startup-id alacritty
