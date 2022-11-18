@@ -38,7 +38,14 @@ vim.cmd [[
                       \ | highlight markdownH3 guifg=#bd93f9
                       \ | highlight markdownH4 guifg=#bd93f9
                       \ | highlight markdownHeadingDelimiter guifg=#bd93f9
+                      \ | highlight @property.id guifg=#50fa7b
+                      \ | highlight @property.css guifg=#8be9fd
+                      \ | highlight @string.plain.css guifg=#bd93f9
+                      \ | highlight @type.tag guifg=#ff79c6
                       \ | highlight @text.title.markdown guifg=#bd93f9
+                      \ | highlight @text.reference guifg=#ff79c6
+                      \ | highlight @text.uri.markdown guifg=#8be9fd
+                      \ | highlight markdownCodeDelimiter guifg=#ff79c6
                       \ | highlight Normal guibg=none
   augroup end
 ]]

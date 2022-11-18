@@ -127,6 +127,7 @@ alias leet="cd ~/Dev/LeetCode"
 alias advent="cd ~/Dev/Advent-of-Code"
 alias exercism="cd ~/snap/exercism/5/exercism/ruby"
 alias kata-machine="~/Dev/kata-machine"
+alias scratch="~/Dev/test-space"
 
 # rails CLI
 alias br="bin/rails"

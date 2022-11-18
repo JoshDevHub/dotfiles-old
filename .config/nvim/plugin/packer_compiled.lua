@@ -264,6 +264,11 @@ _G.packer_plugins = {
     path = "/home/josh/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["tree-sitter-http"] = {
+    loaded = true,
+    path = "/home/josh/.local/share/nvim/site/pack/packer/start/tree-sitter-http",
+    url = "https://github.com/rest-nvim/tree-sitter-http"
+  },
   ["vim-bbye"] = {
     loaded = true,
     path = "/home/josh/.local/share/nvim/site/pack/packer/start/vim-bbye",
