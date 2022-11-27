@@ -234,6 +234,11 @@ _G.packer_plugins = {
     path = "/home/josh/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
+  ["obsidian.nvim"] = {
+    loaded = true,
+    path = "/home/josh/.local/share/nvim/site/pack/packer/start/obsidian.nvim",
+    url = "https://github.com/epwalsh/obsidian.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/josh/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -263,11 +268,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/josh/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["tree-sitter-http"] = {
-    loaded = true,
-    path = "/home/josh/.local/share/nvim/site/pack/packer/start/tree-sitter-http",
-    url = "https://github.com/rest-nvim/tree-sitter-http"
   },
   ["vim-bbye"] = {
     loaded = true,

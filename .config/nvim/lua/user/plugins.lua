@@ -119,7 +119,8 @@ return packer.startup(function(use)
     run = function() vim.fn["mkdp#util#install"]() end,
   })
 
-  use "rest-nvim/tree-sitter-http"
+  -- Obsidian
+  use "epwalsh/obsidian.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

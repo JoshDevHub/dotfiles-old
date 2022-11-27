@@ -39,7 +39,9 @@ vim.cmd [[
                       \ | highlight markdownH4 guifg=#bd93f9
                       \ | highlight markdownHeadingDelimiter guifg=#bd93f9
                       \ | highlight @property.id guifg=#50fa7b
+                      \ | highlight @property.typescript guifg=#bd93f9
                       \ | highlight @property.css guifg=#8be9fd
+                      \ | highlight @property.class.css guifg=#50fa7b
                       \ | highlight @string.plain.css guifg=#bd93f9
                       \ | highlight @type.tag guifg=#ff79c6
                       \ | highlight @text.title.markdown guifg=#bd93f9
