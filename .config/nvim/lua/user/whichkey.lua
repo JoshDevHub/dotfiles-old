@@ -152,6 +152,10 @@ local mappings = {
     w = { "<cmd>lua MiniTrailspace.trim()<cr>", "Strip Trailing Whitespace" },
   },
 
+  j = {
+    "<cmd>tabe ~/my-vault/project_todos/" .. vim.fn.fnamemodify(vim.fn.getcwd(), ':t') .. ".md<cr>", "TODO"
+  },
+
   L = {
     name = "LSP",
     a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
