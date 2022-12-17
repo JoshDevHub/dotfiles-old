@@ -103,7 +103,6 @@ local mappings = {
     "Find files",
   },
   ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
-  ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
   ["/"] = { "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>", "Comment" },
   ["s"] = { "<cmd>sus<cr>", "Suspend" },
   ["r"] = { "<cmd>e!<cr>", "Refresh" },
@@ -113,6 +112,13 @@ local mappings = {
     o = { "<cmd>BufferLineCloseLeft<cr><cmd>BufferLineCloseRight<cr>", "Close all" },
     j = { "<cmd>BufferLinePick<cr>", "Jump" },
     f = { "<cmd>Telescope buffers<cr>", "Find" },
+  },
+
+  d = {
+    name = "Debug",
+    b = { "<cmd>lua require'dap'.toggle_breakpoint()<cr>", "Toggle Breakpoint" },
+    l = { "<cmd>lua require'dap'.continue()<cr>", "Launch" },
+    r = { "<cmd>lua require'dap'.repl.open()<cr>", "Open REPL" },
   },
 
   p = {

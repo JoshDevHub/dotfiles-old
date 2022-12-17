@@ -38,6 +38,8 @@ vim.cmd [[
                       \ | highlight markdownH3 guifg=#bd93f9
                       \ | highlight markdownH4 guifg=#bd93f9
                       \ | highlight markdownHeadingDelimiter guifg=#bd93f9
+                      \ | highlight @property.json guifg=#8be9fd
+                      \ | highlight @property.javascript guifg=#bd93f9
                       \ | highlight @property.id guifg=#50fa7b
                       \ | highlight @property.typescript guifg=#bd93f9
                       \ | highlight @property.css guifg=#8be9fd

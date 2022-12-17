@@ -137,6 +137,10 @@ alias cov="xdg-open coverage/index.html"
 # Dotfile mgmt
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
+# todo
+date_format=$(date +%Y-%m-%d)
+alias todo="nv ~/my-vault/$date_format.md"
+
 # Path Exports
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
