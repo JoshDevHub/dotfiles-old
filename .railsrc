@@ -1,0 +1,8 @@
+# ~/.railsrc
+
+-T
+--database=postgresql
+--css=tailwind
+--javascript=esbuild
+--template=~/.config/rails/rails_template.rb
+--force
