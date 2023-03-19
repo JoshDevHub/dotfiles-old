@@ -1,10 +1,14 @@
 {
-  "name": "erb",
+  "name": "my-snippets",
   "contributes": {
     "snippets": [
       {
         "language": "eruby",
         "path": "./eruby.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./javascript.json"
       }
     ]
   }

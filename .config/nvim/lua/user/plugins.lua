@@ -70,7 +70,6 @@ return packer.startup(function(use)
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
 
-  use "catppuccin/nvim"
   use "Mofiqul/dracula.nvim"
 
   -- cmp plugins
@@ -117,9 +116,6 @@ return packer.startup(function(use)
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
   })
-
-  -- Obsidian
-  use "epwalsh/obsidian.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

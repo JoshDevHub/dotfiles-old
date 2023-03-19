@@ -16,6 +16,7 @@ vim.cmd [[
   augroup _javascript
     autocmd!
     autocmd BufWritePre *.js lua vim.lsp.buf.format { async = true }
+    autocmd BufWritePre *.jsx lua vim.lsp.buf.format { async = true }
   augroup end
 
   augroup _colorcolumn
