@@ -13,15 +13,9 @@ vim.cmd [[
     autocmd FileType gitcommit setlocal spell
   augroup end
 
-  augroup _javascript
-    autocmd!
-    autocmd BufWritePre *.js lua vim.lsp.buf.format { async = true }
-    autocmd BufWritePre *.jsx lua vim.lsp.buf.format { async = true }
-  augroup end
-
   augroup _colorcolumn
     autocmd!
-    autocmd FileType ruby,eruby,javascript set colorcolumn=80
+    autocmd FileType ruby,eruby,javascript,javascriptreact set colorcolumn=80
   augroup end
 
   augroup _c_sharp
