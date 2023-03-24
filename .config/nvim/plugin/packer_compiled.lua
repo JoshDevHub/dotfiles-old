@@ -127,7 +127,7 @@ _G.packer_plugins = {
   ["dracula.nvim"] = {
     loaded = true,
     path = "/home/josh/.local/share/nvim/site/pack/packer/start/dracula.nvim",
-    url = "https://github.com/Mofiqul/dracula.nvim"
+    url = "https://github.com/JoshDevHub/dracula.nvim"
   },
   ["friendly-snippets"] = {
     loaded = true,

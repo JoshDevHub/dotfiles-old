@@ -45,6 +45,10 @@ vim.cmd [[
   augroup end
 ]]
 
+vim.cmd [[colorscheme dracula]]
+
+vim.cmd [[highlight Normal guibg=none]]
+
 -- Autoformat
 -- augroup _lsp
 --   autocmd!
