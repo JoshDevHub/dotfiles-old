@@ -4,7 +4,7 @@
 # oh-my-zsh config
 export ZSH="/home/josh/.oh-my-zsh"
 ZSH_THEME="eastwood"
-plugins=(git vi-mode zsh-autosuggestions)
+plugins=(bundler git rails vi-mode zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 bindkey -M viins 'jk' vi-cmd-mode
 

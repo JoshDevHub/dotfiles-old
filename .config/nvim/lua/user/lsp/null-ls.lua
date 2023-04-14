@@ -14,7 +14,7 @@ null_ls.setup({
 		formatting.prettier.with({ extra_args = { "--double-quote", "--jsx-double-quote" } }),
 		formatting.black.with({ extra_args = { "--fast" } }),
 		formatting.stylua,
-    diagnostics.rubocop
+		diagnostics.rubocop
     -- diagnostics.flake8
 	},
 })

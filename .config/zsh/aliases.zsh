@@ -3,7 +3,6 @@ alias zedit="nv ~/.zshrc"
 alias tedit="nv ~/.tmux.conf"
 alias nedit="nv ~/.config/nvim"
 alias zsrc="source $HOME/.zshrc"
-alias tsrc="tmux source $HOME/.tmux.conf"
 
 # basic commands
 alias c="clear"
