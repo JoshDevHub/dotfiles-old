@@ -1,3 +1,4 @@
-# My nvim config
+# 💤 LazyVim
 
-Run `:checkhealth` to make sure you're healthy.
+A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
+Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
