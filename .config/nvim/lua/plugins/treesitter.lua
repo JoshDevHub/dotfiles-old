@@ -4,6 +4,7 @@ return {
     dependencies = { "RRethy/nvim-treesitter-endwise" },
     opts = function(_, opts)
       opts.endwise = { enable = true }
+      opts.highlight = { enable = true, additional_vim_regex_highlighting = false }
       opts.indent = { enable = true, disable = { "yaml", "ruby" } }
       opts.ensure_installed = {
         "bash",

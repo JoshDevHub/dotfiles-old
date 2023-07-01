@@ -5,7 +5,9 @@ return {
     opts = {
       ---@type lspconfig.options
       servers = {
-        solargraph = {},
+        solargraph = {
+          cmd = { os.getenv("HOME") .. "/.rbenv/shims/solargraph", "stdio" },
+        },
       },
     },
   },

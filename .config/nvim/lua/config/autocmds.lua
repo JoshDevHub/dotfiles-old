@@ -13,12 +13,12 @@ vim.api.nvim_create_autocmd("VimEnter", {
   end,
 })
 
-vim.api.nvim_create_autocmd("ColorScheme", {
-  group = augroup("transparency"),
-  callback = function()
-    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-  end,
-})
+-- vim.api.nvim_create_autocmd("ColorScheme", {
+--   group = augroup("transparency"),
+--   callback = function()
+--     vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+--   end,
+-- })
 
 vim.api.nvim_create_autocmd("FileType", {
   group = augroup("80_ruler"),
