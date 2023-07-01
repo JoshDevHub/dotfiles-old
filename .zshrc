@@ -16,3 +16,14 @@ unset conf
 if [ -z "$TMUX" ]; then
   tmux new-session -As "josh"
 fi
+
+co_author_commit() {
+  commit_msg=$1
+  author_info=$(git log --format="%aN <%aE>" | sort -u | fzf)
+
+  git commit -m $commit_msg -m "Co-authored-by: $author_info"
+}
+
+action_route() {
+  echo "$(rails routes -E | grep -B 2 $1)"
+}
