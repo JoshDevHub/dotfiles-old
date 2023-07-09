@@ -17,7 +17,7 @@ if [ -z "$TMUX" ]; then
   tmux new-session -As "josh"
 fi
 
-co_author_commit() {
+co_author() {
   commit_msg=$1
   author_info=$(git log --format="%aN <%aE>" | sort -u | fzf)
 
