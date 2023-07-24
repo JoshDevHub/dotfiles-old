@@ -6,7 +6,7 @@ return {
       {
         event = "file_opened",
         handler = function(file_path)
-          require("neo-tree").close_all()
+          vim.api.nvim_command(":Neotree toggle")
         end,
       },
     }
