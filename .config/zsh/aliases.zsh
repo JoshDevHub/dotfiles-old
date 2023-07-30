@@ -12,6 +12,8 @@ alias x="exit"
 alias br="bin/rails"
 alias bex="bundle exec"
 alias cov="xdg-open coverage/index.html"
+alias odev="overmind start -f Procfile.dev"
+alias oweb="overmind connect web"
 
 # Dotfile mgmt
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
