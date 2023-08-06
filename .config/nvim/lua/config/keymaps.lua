@@ -20,3 +20,4 @@ vim.opt.timeoutlen = 300
 
 vim.keymap.set("n", "<leader>gl", require("gitsigns").blame_line, build_opts("git-blame"))
 vim.keymap.set("n", "<leader>gt", require("gitsigns").stage_hunk, build_opts("stage-hunk"))
+vim.keymap.set("v", "<leader>p", '"_dP')
