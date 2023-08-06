@@ -11,7 +11,7 @@ alias x="exit"
 # rails CLI
 alias br="bin/rails"
 alias bex="bundle exec"
-alias cov="xdg-open coverage/index.html"
+alias cov="google-chrome coverage/index.html"
 alias odev="overmind start -f Procfile.dev"
 alias oweb="overmind connect web"
 
