@@ -21,3 +21,11 @@ vim.opt.timeoutlen = 300
 vim.keymap.set("n", "<leader>gl", require("gitsigns").blame_line, build_opts("git-blame"))
 vim.keymap.set("n", "<leader>gt", require("gitsigns").stage_hunk, build_opts("stage-hunk"))
 vim.keymap.set("v", "<leader>p", '"_dP')
+
+vim.api.nvim_create_user_command("Rspec", function(input)
+  local test_cmd = "bundle exec rspec " .. input.args
+  vim.api.nvim_cmd({
+    cmd = "terminal",
+    args = { test_cmd },
+  }, {})
+end, { nargs = "*" })
