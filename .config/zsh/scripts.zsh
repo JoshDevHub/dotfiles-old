@@ -14,6 +14,7 @@ tclone() {
     [work]=~/Dev/work/
     [top]=~/Dev/top_contrib/
     [agency]=~/Dev/agency-of-learning/
+    [scratch]=~/Dev/test-space/
   )
 
   project_name=$(echo "$repo_ssh_url" | awk -F'[/.]' '{print $3}')
@@ -21,4 +22,34 @@ tclone() {
   git clone $repo_ssh_url $destination_path
 
   source ~/.local/bin/tmux-sessionizer $destination_path
+}
+
+kill_port() {
+  port_num=$1
+  lsof -ti :$port_num | xargs kill -9
+}
+
+g_remote_url() {
+  ssh_remote=$(git remote -v | head -n 1 | awk -F " " '{print $2}')
+  url_without_ext="${ssh_remote%.git}"
+  repo_path="${url_without_ext#*:}"
+
+  echo "https://github.com/$repo_path"
+}
+
+web_repo() {
+  google-chrome $(g_remote_url)
+}
+
+open_pr() {
+  compare_branch=$(git branch --show-current)
+
+  if [ $# -eq 0 ]; then
+    base_branch="main"
+  else
+    base_branch=$1
+  fi
+
+  pull_url="$(g_remote_url)/compare/$base_branch...$compare_branch"
+  google-chrome $pull_url
 }
