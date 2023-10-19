@@ -3,4 +3,5 @@ return {
   { "folke/noice.nvim", enabled = false },
   { "rcarriga/nvim-notify", enabled = false },
   { "folke/persistence.nvim", enabled = false },
+  { "lukas-reineke/indent-blankline.nvim", enabled = false },
 }
