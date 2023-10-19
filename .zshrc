@@ -16,3 +16,5 @@ unset conf
 if [ -z "$TMUX" ]; then
   tmux new-session -As "josh"
 fi
+
+export EDITOR='nvim'
