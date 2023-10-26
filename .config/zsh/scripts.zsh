@@ -24,13 +24,23 @@ tclone() {
   source ~/.local/bin/tmux-sessionizer $destination_path
 }
 
+# kills process for given port number
 kill_port() {
   port_num=$1
   lsof -ti :$port_num | xargs kill -9
 }
 
 g_remote_url() {
-  ssh_remote=$(git remote -v | head -n 1 | awk -F " " '{print $2}')
+  remote=$1
+  if [ "$remote" = "og" ]; then
+    ssh_remote=$(git remote -v | head -n 1 | awk -F " " '{print $2}')
+  elif [ "$remote" = "up" ]; then
+    ssh_remote=$(git remote -v | grep upstream | grep -v -e fetch | awk -F " " '{print $2}')
+  else
+    echo "Must pass in a remote name" >&2
+    return 1
+  fi
+
   url_without_ext="${ssh_remote%.git}"
   repo_path="${url_without_ext#*:}"
 
@@ -38,7 +48,13 @@ g_remote_url() {
 }
 
 web_repo() {
-  google-chrome $(g_remote_url)
+  remote_url=$(g_remote_url $1)
+
+  if [ -z "$remote_url" ]; then
+    return 1
+  fi
+
+  google-chrome $remote_url
 }
 
 open_pr() {
