@@ -21,3 +21,5 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 # NeoVim
 alias nv="~/nvim.appimage"
 alias fnv='nvim "$(fzf)"'
+
+alias t="task"

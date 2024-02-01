@@ -16,3 +16,9 @@ unset conf
 if [ -z "$TMUX" ]; then
   tmux new-session -As "josh"
 fi
+
+# temp scripts
+
+function tilde_files() {
+  find $1 -type f -name "*.md" -exec grep -l "~~~" {} \;
+}

@@ -6,6 +6,13 @@ co_author() {
   git commit -m $commit_msg -m "Co-authored-by: $author_info"
 }
 
+snap_clean() {
+  sudo snap list --all | awk '/disabled/{print $1, $3}' |
+    while read snapname revision; do
+      snap remove "$snapname" --revision=$revision
+    done
+}
+
 tclone() {
   repo_ssh_url=$1
   workspace=$2
@@ -44,7 +51,11 @@ g_remote_url() {
   url_without_ext="${ssh_remote%.git}"
   repo_path="${url_without_ext#*:}"
 
-  echo "https://github.com/$repo_path"
+  if [ -z $repo_path ]; then
+    echo ""
+  else
+    echo "https://github.com/$repo_path"
+  fi
 }
 
 web_repo() {
@@ -54,10 +65,25 @@ web_repo() {
     return 1
   fi
 
-  google-chrome $remote_url
+  firefox $remote_url
 }
 
 open_pr() {
+  compare_branch=$(git branch --show-current)
+  upstream_url=$(g_remote_url up)
+  base_branch=${1:-"main"}
+
+  if [ -z $upstream_url ]; then
+    pull_url="$(g_remote_url og)/compare/$base_branch...$compare_branch"
+  else
+    compare_origin="JoshDevHub:$(basename $PWD)"
+    pull_url="$upstream_url/compare/$base_branch...$compare_origin:$compare_branch"
+  fi
+
+  firefox $pull_url
+}
+
+old_pr() {
   compare_branch=$(git branch --show-current)
 
   if [ $# -eq 0 ]; then
@@ -68,4 +94,9 @@ open_pr() {
 
   pull_url="$(g_remote_url)/compare/$base_branch...$compare_branch"
   google-chrome $pull_url
+}
+
+tp() {
+  current_project=$(basename "$(pwd)")
+  task "project:$current_project" "$@"
 }
