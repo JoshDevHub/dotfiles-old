@@ -8,6 +8,7 @@ return {
       opts.indent = { enable = true, disable = { "yaml", "ruby" } }
       opts.ensure_installed = {
         "bash",
+        "elixir",
         "embedded_template",
         "html",
         "javascript",

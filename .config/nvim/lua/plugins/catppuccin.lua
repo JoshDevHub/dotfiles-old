@@ -33,8 +33,9 @@ return {
       },
       custom_highlights = function(colors)
         return {
-          ["@label"] = { fg = colors.mauve },
-          ["@symbol.ruby"] = { fg = colors.mauve },
+          ["@variable.member"] = { fg = colors.mauve },
+          ["@string.special.symbol.ruby"] = { fg = colors.mauve },
+          ["@string.special"] = { fg = colors.mauve },
           ["@conditional"] = { fg = "#fca7ea" },
           ["@constant"] = { fg = colors.mauve },
           ["@constant.builtin"] = { fg = colors.mauve },

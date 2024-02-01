@@ -22,6 +22,8 @@ vim.keymap.set("n", "<leader>gl", require("gitsigns").blame_line, build_opts("gi
 vim.keymap.set("n", "<leader>gt", require("gitsigns").stage_hunk, build_opts("stage-hunk"))
 vim.keymap.set("v", "<leader>p", '"_dP')
 
+vim.keymap.set("n", "<A-a>", "<C-a>")
+
 vim.api.nvim_create_user_command("Rspec", function(input)
   local test_cmd = "bundle exec rspec " .. input.args
   vim.api.nvim_cmd({
