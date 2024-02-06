@@ -7,7 +7,7 @@ return {
       servers = {
         stimulus_ls = {
           cmd = { "stimulus-language-server", "--stdio" },
-          filetypes = { "html", "ruby", "eruby" },
+          filetypes = { "html", "eruby" },
         },
       },
     },
