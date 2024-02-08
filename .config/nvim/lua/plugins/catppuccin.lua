@@ -43,6 +43,8 @@ return {
           ["@keyword.function"] = { fg = "#fca7ea" },
           ["@property"] = { fg = colors.mauve },
           ["@type"] = { fg = colors.teal },
+          ["@namespace"] = { fg = colors.teal },
+          ["@lsp.type.class.ruby"] = { fg = colors.teal },
         }
       end,
     },
