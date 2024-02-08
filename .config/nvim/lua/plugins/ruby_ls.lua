@@ -48,7 +48,7 @@ return {
       ---@type lspconfig.options
       servers = {
         ruby_ls = {
-          cmd = { "ruby-lsp" },
+          cmd = { os.getenv("HOME") .. "/.rbenv/shims/ruby-lsp", "stdio" },
           on_attach = function(client, buffer)
             setup_diagnostics(client, buffer)
           end,
